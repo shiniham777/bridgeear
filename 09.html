@@ -2,33 +2,67 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>桥耳朵 09</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>桥耳朵｜老木门 回任务</title>
 <style>
-:root{--bg:#f5efe3;--text:#232323;--muted:#777;--card:#fffaf1;--line:#ded4c3}
+:root{
+  --bg:#f3eddf;
+  --card:#fbf7ef;
+  --text:#222222;
+  --muted:#757575;
+  --line:#d9cdb9;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
-font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
-main{width:min(680px,100%);margin:auto;padding:48px 24px 72px}
-h1{font-size:34px;margin:0 0 10px}
-.sub{color:var(--muted);font-size:15px;margin-bottom:36px}
-audio{width:100%;margin-top:26px}
-.back{display:inline-block;margin-bottom:28px;text-decoration:none;color:var(--muted)}
-.num{font-size:13px;color:var(--muted);margin-bottom:7px}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text)}
+body{min-height:100vh}
+.wrap{width:min(88vw,1000px);margin:0 auto;padding:84px 0 120px}
+h1{font-size:52px;line-height:1.1;margin:0 0 20px;font-weight:700;letter-spacing:-1px}
+.archive{font-size:26px;color:var(--muted);margin-bottom:56px}
+.card{
+  display:block;
+  background:var(--card);
+  border:1.5px solid var(--line);
+  border-radius:28px;
+  padding:34px 38px 32px;
+  margin:0 0 24px;
+  text-decoration:none;
+  color:inherit;
+}
+.card:active{transform:scale(.997)}
+.num{font-size:22px;color:var(--muted);margin-bottom:14px}
+.title{font-size:30px;font-weight:600;line-height:1.35;margin-bottom:18px}
+.enter{font-size:22px;color:var(--muted)}
+.player-card{
+  background:var(--card);
+  border:1.5px solid var(--line);
+  border-radius:28px;
+  padding:34px 38px 36px;
+  margin-top:36px
+}
+audio{width:100%;margin-top:10px}
+.back{display:inline-block;margin-top:30px;font-size:20px;color:var(--muted);text-decoration:none}
+@media (max-width:640px){
+  .wrap{width:86vw;padding:52px 0 80px}
+  h1{font-size:40px}
+  .archive{font-size:20px;margin-bottom:38px}
+  .card{border-radius:22px;padding:26px 28px 25px;margin-bottom:18px}
+  .num{font-size:17px}
+  .title{font-size:24px}
+  .enter{font-size:17px}
+}
 </style>
-
 </head>
 <body>
-<main>
-  <a class="back" href="index.html">← 返回声音档案</a>
-  <div class="num">声音 09</div>
-  <h1>《声音名称待定》</h1>
-  <div class="sub">戴上耳机，听听桥在说什么。</div>
-  <audio controls preload="metadata" playsinline>
-    <source src="09.mp3" type="audio/mpeg">
-    你的浏览器暂不支持音频播放。
-  </audio>
+<main class="wrap">
+  <h1>桥耳朵</h1>
+  <div class="archive">声音档案（内测版）</div>
+  <div class="player-card">
+    <div class="num">声音 09</div>
+    <div class="title">老木门 回任务</div>
+    <audio controls preload="metadata" src="09.mp3"></audio>
+  </div>
+  <a class="back" href="index.html">返回声音档案</a>
 </main>
 </body>
 </html>
